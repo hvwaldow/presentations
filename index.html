@@ -1,20 +1,43 @@
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/reveal.css"/>
-  <!-- <link rel="stylesheet" href="../../packages/reveal.js/css/theme/night.css" id="theme"> -->
-  <link rel="stylesheet" href="css/theme/moon.css" id="theme">
-  <!-- <link rel="stylesheet" href="./custom.css"/> -->
+  <title>The EAWAG Research Data Management Project</title>
+  <meta name="author" content="Harald von Waldow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/theme/white.css"
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
+
 <body>
   <div class="reveal">
+    <!-- <img src="assets/ealogo_black.svg" width="12%"/> -->
+    <img src="assets/eaw-rdm1_inv.svg" width="50%"/>
     <div class="slides">
       <!-- here come the slides -->
-<img class="logo" src=../../packages/reveal.js/ealogo-white.png />
-<section>
-  <h1 class="maintitle_l1"> The EAWAG Research Data Management Project 1</h1>
-  <h2 class="maintitle_l2"> &mdash; start of the pilot phase &mdash; </h2>
-  <h3 class="authordate"> Harald von Waldow / 2016-03-17</h3>
-</section>
+
+      <section>
+	<img src="assets/eawag_vorlage_blau_background_lower.png"/>
+	<h1 class="maintitle_l1"> The EAWAG Research Data Management Project</h1>
+	<h2 class="maintitle_l2"> &mdash; start of the pilot phase &mdash; </h2>
+	<h3 class="authordate"> Harald von Waldow / 2016-03-17</h3>
+      </section>
 
 <section>
   <section>
@@ -130,7 +153,7 @@
       <li>The platform is ignorant about a file's content
     </ul>
     </div>
-   <img src="" width="49%" height="630px" /> 
+   <img src="" width="49%" height="630px" />
   </section>
   <section>
     <div style="text-align:left;float:left; width:50%;">
@@ -171,7 +194,7 @@
 
       ---
       ## Time-line and concluding remarks
-      + Pilot-phase, meaning of, duration 
+      + Pilot-phase, meaning of, duration
       + Reminder for launch-event, plea to send a Data Manager candidate
       + Expected go-live
       + Long-term features and possibilities
@@ -181,8 +204,12 @@
 
       </div>
     </div>
-    <script src="../../packages/reveal.js/lib/js/head.min.js"></script>
-    <script src="../../packages/reveal.js/js/reveal.js"></script>
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -203,12 +230,12 @@
 
         // Optional reveal.js plugins
       dependencies: [
-          { src: '../../packages/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '../../packages/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../../packages/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../../packages/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '../../packages/reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: '../../packages/reveal.js/plugin/notes/notes.js', async: true }
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
         ]
       });
     </script>
