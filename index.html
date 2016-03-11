@@ -42,10 +42,13 @@
       </section>
       <section>
 	<section>
-	  <h1>What it is <i><font class="alert">not</font></i></h1>
+	  <h1>What it is <i class="alert">not</i></h1>
 	</section>
 	<section>
-	  <div class="leftcolumn">
+	  <div class="rightcolumn box">
+
+	  </div>
+	  <div class="leftcolumn box">
 	    A homogenized, well-structured, relational database that you could query like:
 	    <blockquote>
 	      Give me all pH - values where we also have turbidity and
@@ -54,24 +57,21 @@
 	    <blockquote class="fragment fade-in">
 	      And plot them. In blue. With yellow dots. On a logarithmic scale.
 	    </blockquote>
-		<ol class="alert">
-		  <li class="fragment">That would be impossible, EAWAG-wide.</li>
-		  <li class="fragment">That doesn't solve our problem</li>
-		</ol>
-	  </div>
-	  <div class="rightcolumn">
-	    <img src=""/>
+	    <ol class="alert">
+	      <li class="fragment">That would be impossible, EAWAG-wide.</li>
+	      <li class="fragment">That doesn't solve our problem</li>
+	    </ol> 
 	  </div>
 	</section>
       </section>
  
       <section>
 	<section>
-	  <h1>What <i><font class="alert">is it</font></i> then?</h1>
+	  <h1>What <i class="alert">is it</i> then?</h1>
 	</section>
 	<section>
 	  <div class="leftcolumn">
-	    A collection of <i><font class="alert"><b>"Data Packages"</b></font></i>.
+	    <p style="text-align:center;"><b>A collection of<br /> <i><font class="alert">"Data Packages"</font></i>.</b></p>
 	    <p>
   	      The system doesn't have to look into the files.
 	    <p>
@@ -79,140 +79,115 @@
 	      no selection/search/analysis based on dataset content.</img><br />
 	    <p>
   	      <img class="icon" src="assets/Plus_in_circle.svg">
-	      technically, everything can be dumped into a package, without any pre-processing.
+	      technically, everything can be dumped into a package, without any pre-processing.<br />
+	      <div style="font-size:smaller">
+		<img class="back" src="assets/Microsoft_Excel_2013_logo_blass.svg">
+		<img class="back" style="left:4em;" src="assets/Microsoft_Word_2013_logo_blass.svg">
+		Some file-types are not so great for archival and should be avoided!
+		
+	      </div>
 	  </div>
 	</section>
+	<section>
+	  <div class="rightcolumn box">
+	    <div class="exampletext">
+	      authors: ...<br />
+	      date of submission: ...<br />
+	      temporal coverage: ...<br />
+	      spatial coverage: ...<br />
+	      status: ...<br />
+
+	    <!-- <p class="exampletext" style=""> -->
+
+	    </div>
+	    <p class="exampletext fragment" data-fragment-index="1">
+	      Variables: ...<br />  Systems: ... <br/>
+	    </p>
+	    <img class="fragment" data-fragment-index="2" style="height:400px"  src="assets/repo-standard-combo.png" />
+	  </div>
+	  <div class="leftcolumn box">
+	    <p style="text-align:center;"><b>package = files + <span class="alert">meta-data</span></b></p>
+	    <p style="text-align:center;color:gray;"><b>"resources" = files</b></p>
+	    <ul>
+	      <li class="fragment" data-fragment-index="1">search for packages is based on meta-data.</li>
+	      <li class="fragment" data-fragment-index="2">interaction with other repositories relies on meta-data.</li>
+	      <li class="fragment" data-fragment-index="3">other "meta-data", e.g., units of variables, should
+	    	go into a resource (= file).</li>
+	    </ul>
+	  </div>
+
+	</section>
+
+	
       </section>
 
-<section data-markdown data-separator="---"  data-separator-vertical="--">
-  <script type="text/template">
-    ## What is it good for?
-    --
-    ### A motivating real-life example
-    
-    > On Tue, Aug 25, 2015 at 6:27 PM, Matthew MacLeod
-    > <Matthew.MacLeod@aces.su.se
-	 > wrote:
 
-      > Hey HvW…
-      >
-      >
-      >
-      > Recep and I have been working a bit on some ideas related to your
-      > Remoteness Index.
-      >
-      >
-      >
-      > <font color="#FBC197">It would help us a lot to have the raw data</font> (as NetCDF files, for
-      > example) that underlie your Remoteness Index maps that you
-      > published in ES&T.  We are most interested in the map for the
-      > night-light emission scenario, but would be happy to have the raw
-      > data for the CROP scenario also.
-      > <p>
-      >
-      >
-      > <font color="#FBC197">Do you still have those files backed up somewhere??</font>
-      >
-      >
-      >
-      > Thanks!&nbsp;&nbsp;  -matt
+<!-- <section> -->
+<!--   <section> -->
+<!--     <h2> The broad concept</h2> -->
+<!--     <h3> EAWAG Research Data Management Platform</h3> -->
+<!--   </section> -->
+<!--   <section> -->
+<!--     <div style="text-align:left;float:left; width:50%;"> -->
+<!--       <b>Data is organized in <font color="#FBC197">packages</font>, containing:</b> -->
+<!--       <p> -->
+<!--     <ol> -->
+<!--       <li><font color="#FBC197">meta-data</font> (who, where, what, when, how, ...) -->
+<!--       <li>the data proper as <font color="#FBC197">files</font> -->
+<!--     </ol> -->
+<!--     <ul class="fragment"> -->
+<!--       <li>All types of files are possible in principle, -->
+<!-- 	e.g.,<br />PDF, csv, xlsx, ai, txt, WKTF, logger-output, video, sound, ... -->
+<!--       <li>The platform is ignorant about a file's content -->
+<!--     </ul> -->
+<!--     </div> -->
+<!--    <img src="" width="49%" height="630px" /> -->
+<!--   </section> -->
+<!--   <section> -->
+<!--     <div style="text-align:left;float:left; width:50%;"> -->
+<!--       <b>A package belongs to exactly one <font color="#FBC197">organization</font></b>. -->
+<!--     <p> -->
+<!--       <ul> -->
+<!-- 	<li>Organizations can be departments and groups (and service units). -->
+<!-- 	<li class="fragment" data-fragment-index="1">Organizations correspond mostly to the EAWAG organigram. -->
+<!-- 	<li class="fragment" data-fragment-index="2">Organizations serve to structure -->
+<!-- 	  <ul> -->
+<!-- 	    <li class="fragment" data-fragment-index="2">access issues (who can read and write a package) -->
+<!-- 	    <li class="fragment" data-fragment-index="3">the interaction between researchers and the project -->
+<!-- 	    via <font color="#FBC197">Data Managers</font> -->
+<!-- 	  </ul> -->
+<!--       </ul> -->
+<!--     </div> -->
+<!--     <img src="" width="49%" height="630px" /> -->
+<!--   </section> -->
+<!--   </section> -->
+<!-- <section data-markdown data-separator="---"  data-separator-vertical="--"> -->
+<!--   <script type="text/template"> -->
+<!--       ## Characteristics of the software -->
+<!--       -- -->
+<!--       ### Description of CKAN (3 slides) -->
+<!--       ### Comparision with other packages (2 slides) -->
+<!--       -- -->
+<!--       ### Life demo Web-UI -->
+<!--       + includes elaboration of visibility and permission rules: -->
+<!--       1. All data and meta-data is only accessible inside the EAWAG-network by EAWAG staff. -->
+<!--       2. All data is visible to everybody by default (visibility=private only temporarily) -->
+<!--       3. **Everybody is strictly required to get permission before any data is used in any way or made available outside EAWAG** -->
       
-      --
-      ...
-      
-      the story with the steps were necessary to actually make Matt and Recep happy (4 slides).
-      
-      ...
-      --
-      <img style="margin-top:-60px;height:110%;" src="twitter.png">
-      --
-      how that could have been achieved if I had uploaded my data to our repository ... (2 slides)
-      --
-      ## What is it good for?
+<!--       ** Rule \#3 is very important and has to be clearly communicated at all levels** -->
 
-      <ul>
-      <li> more efficient research
-      <li> safeguarding of important resources acquired at a dear price (raw, unique observational data)
-      <li> facilitation of inter/tra-group & inter/tra-departmental collaboration
-      <li> increased potential for new research ideas
-      <li> compliance with good scientific practice ([EAWAG Guidelines](https://www.eawag.ch/fileadmin/Domain1/About/Arbeiten/Forschungsumfeld/integritaet_forschung.pdf))
-      <font color="#9EDBF2">
-      <li class="fragment"> compliance with the requirements of funding agencies and journals
-      </font>
-      <font color="#00B2DD">
-      <li class="fragment" > more potential for inter-institutional collaboration
-      <li class="fragment"> more citations
-      <li class="fragment" > increased visibility of EAWAG work
-      </font>
-      </ul>
-  </script>
-</section>
-<section>
-  <section>
-    <h2> The broad concept</h2>
-    <h3> EAWAG Research Data Management Platform</h3>
-  </section>
-  <section>
-    <div style="text-align:left;float:left; width:50%;">
-      <b>Data is organized in <font color="#FBC197">packages</font>, containing:</b>
-      <p>
-    <ol>
-      <li><font color="#FBC197">meta-data</font> (who, where, what, when, how, ...)
-      <li>the data proper as <font color="#FBC197">files</font>
-    </ol>
-    <ul class="fragment">
-      <li>All types of files are possible in principle,
-	e.g.,<br />PDF, csv, xlsx, ai, txt, WKTF, logger-output, video, sound, ...
-      <li>The platform is ignorant about a file's content
-    </ul>
-    </div>
-   <img src="" width="49%" height="630px" />
-  </section>
-  <section>
-    <div style="text-align:left;float:left; width:50%;">
-      <b>A package belongs to exactly one <font color="#FBC197">organization</font></b>.
-    <p>
-      <ul>
-	<li>Organizations can be departments and groups (and service units).
-	<li class="fragment" data-fragment-index="1">Organizations correspond mostly to the EAWAG organigram.
-	<li class="fragment" data-fragment-index="2">Organizations serve to structure
-	  <ul>
-	    <li class="fragment" data-fragment-index="2">access issues (who can read and write a package)
-	    <li class="fragment" data-fragment-index="3">the interaction between researchers and the project
-	    via <font color="#FBC197">Data Managers</font>
-	  </ul>
-      </ul>
-    </div>
-    <img src="" width="49%" height="630px" />
-  </section>
-  </section>
-<section data-markdown data-separator="---"  data-separator-vertical="--">
-  <script type="text/template">
-      ## Characteristics of the software
-      --
-      ### Description of CKAN (3 slides)
-      ### Comparision with other packages (2 slides)
-      --
-      ### Life demo Web-UI
-      + includes elaboration of visibility and permission rules:
-      1. All data and meta-data is only accessible inside the EAWAG-network by EAWAG staff.
-      2. All data is visible to everybody by default (visibility=private only temporarily)
-      3. **Everybody is strictly required to get permission before any data is used in any way or made available outside EAWAG**
+<!--       -- -->
       
-      ** Rule \#3 is very important and has to be clearly communicated at all levels**
+<!--       ### life-demo API (2 slides) -->
 
-      --
-      
-      ### life-demo API (2 slides)
-
-      ---
-      ## Time-line and concluding remarks
-      + Pilot-phase, meaning of, duration
-      + Reminder for launch-event, plea to send a Data Manager candidate
-      + Expected go-live
-      + Long-term features and possibilities
-      </script>
-    </section>
+<!--       --- -->
+<!--       ## Time-line and concluding remarks -->
+<!--       + Pilot-phase, meaning of, duration -->
+<!--       + Reminder for launch-event, plea to send a Data Manager candidate -->
+<!--       + Expected go-live -->
+<!--       + Long-term features and possibilities -->
+<!--       </script> -->
+<!--     </section> -->
         <!-- here come the slides -->
 
       </div>
@@ -242,7 +217,7 @@
         //height:1200,
         // Factor of the display size that should remain empty around the content
         margin: 0.03,
-
+        zoomKey: 'shift',
         // Optional reveal.js plugins
       dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },

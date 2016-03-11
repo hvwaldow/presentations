@@ -107,26 +107,66 @@ img.logo {
     color: $eawred1;
 }
 
-.reveal section .leftcolumn {
-    width: 50%;
-    float:left;
-    text-align:left;
-    position:relative;
-    top:60px;
+.reveal section div.rightcolumn {
+    width: 500px;
+    height: 750px;
+    margin-top: -10px;
+    float: right;
+    /* text-align:left; */
 }
 
-.reveal section .rightcolumn img {
+.reveal section div.leftcolumn {
+    width: 500px;
+    height: 670px;
+    margin-top: 70px;
+}
+
+.reveal section div.leftcolumn p {
+    text-align: left;
+}
+/* .reveal section .rightcolumn img { */
+/*     @include raw_img; */
+/*     height: 650px; */
+/*     /\* width: 49%;		 *\/ */
+/*     /\* position: relative; *\/ */
+/*     /\* top: -22px; *\/ */
+/* } */
+
+/* .reveal section .rightcolumn .text { */
+/*     /\* position: relative; *\/ */
+/*     /\* left: 2em;; *\/ */
+/*     /\* top: -22px; *\/ */
+/*     text-align: left; */
+/*     background-color: blue; */
+/* } */
+
+.reveal section img {
     @include raw_img;
-    height: 768px;
-    width: 49%;
-    /* border-style: solid; */
-    position: relative;
-    top: -22px;
 }
-
+    
 .reveal section img.icon {
     @include raw_img;
     height: 30px;
+}
+
+.reveal section img.back {
+    @include raw_img;
+    height: 3em;
+    position: absolute;
+    left: 0p;
+    z-index: -1;
+}
+
+.reveal section .exampletext {
+    font-family: mono;
+    font-size: smaller;
+    text-align: left;
+    background-color: $lightblue;
+}
+
+.reveal section .box {
+    border-style: solid;
+    border-width: 3px;
 }
 
 /* reveal .rightcolumn { */
@@ -142,6 +182,7 @@ img.logo {
     background-color: $lightblue;
     width: 85%;
 }
+
 
 // Theme template ------------------------------
 @import "../template/theme";
