@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The EAWAG Research Data Management Project</title>
+  <title>The EAWAG Research Data Platform</title>
   <meta name="author" content="Harald von Waldow">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -27,14 +27,11 @@
 
 <body>
   <div class="reveal">
-    <!-- <img src="assets/ealogo_black.svg" width="12%"/> -->
-    
     <div class="slides">
-      <!-- here come the slides -->
       <img class="logo" src="assets/eaw-rdm1_inv.svg"/>
       <section data-background="assets/eawag_vorlage_blau_background.png" data-state="title">
 	<div class="maintitle_l1">
-	  The EAWAG Research Data Management Project
+	  The EAWAG Research Data Platform
 	</div>
 	<div class="maintitle_l2">
 	  &mdash; start of the pilot phase &mdash;
@@ -43,38 +40,49 @@
 	  Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-17
 	</div>
       </section>
-
-<section>
-  <section>
-    <h1>What it is <i><font color="#FBC197">not</font></i></h1>
-  </section>
-  <div style="width:50%;float:left;text-align:left;">
-    A homogenized, well-structured, relational database that you could query like:
-    <p>
-    <i>Give me all pH - values where we also have turbidity and
-      discharge is &lt;&nbsp;20&nbsp;m<sup>3</sup>/s.</i>
-    <p>
-      <i class="fragment fade-in">And plot them. In blue. With yellow dots. On a logarithmic scale.</i>
-    <p>
-      &nbsp;
-    <p>
-      <font color="#FBC197">
-      <ol class="fragment">
-	<li>That would be impossible, EAWAG-wide.</li>
-	<li>That doesn't solve our problem</li>
-      </ol>
-      </font>
-  </div>
-  <img class="colimg" src="" width="49%" height="630px" />
-</section>
-
-<section>
-  <section>
-  <h1>What is it then?</h1>
-  </section>
-
-
-</section>
+      <section>
+	<section>
+	  <h1>What it is <i><font class="alert">not</font></i></h1>
+	</section>
+	<section>
+	  <div class="leftcolumn">
+	    A homogenized, well-structured, relational database that you could query like:
+	    <blockquote>
+	      Give me all pH - values where we also have turbidity and
+	      discharge is &lt;&nbsp;20&nbsp;m<sup>3</sup>/s.
+	    </blockquote>
+	    <blockquote class="fragment fade-in">
+	      And plot them. In blue. With yellow dots. On a logarithmic scale.
+	    </blockquote>
+		<ol class="alert">
+		  <li class="fragment">That would be impossible, EAWAG-wide.</li>
+		  <li class="fragment">That doesn't solve our problem</li>
+		</ol>
+	  </div>
+	  <div class="rightcolumn">
+	    <img src=""/>
+	  </div>
+	</section>
+      </section>
+ 
+      <section>
+	<section>
+	  <h1>What <i><font class="alert">is it</font></i> then?</h1>
+	</section>
+	<section>
+	  <div class="leftcolumn">
+	    A collection of <i><font class="alert"><b>"Data Packages"</b></font></i>.
+	    <p>
+  	      The system doesn't have to look into the files.
+	    <p>
+  	      <img class="icon" src="assets/Minus_in_circle.svg">
+	      no selection/search/analysis based on dataset content.</img><br />
+	    <p>
+  	      <img class="icon" src="assets/Plus_in_circle.svg">
+	      technically, everything can be dumped into a package, without any pre-processing.
+	  </div>
+	</section>
+      </section>
 
 <section data-markdown data-separator="---"  data-separator-vertical="--">
   <script type="text/template">
@@ -233,7 +241,7 @@
         //width: 1090,
         //height:1200,
         // Factor of the display size that should remain empty around the content
-        margin: 0.05,
+        margin: 0.03,
 
         // Optional reveal.js plugins
       dependencies: [

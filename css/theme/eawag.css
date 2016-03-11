@@ -63,6 +63,46 @@ img.logo {
   font-family: mono;
   color: #045A78; }
 
+.alert {
+  color: #F68B1F; }
+
+.reveal section .leftcolumn {
+  width: 50%;
+  float: left;
+  text-align: left;
+  position: relative;
+  top: 60px; }
+
+.reveal section .rightcolumn img {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 768px;
+  width: 49%;
+  /* border-style: solid; */
+  position: relative;
+  top: -22px; }
+
+.reveal section img.icon {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 30px; }
+
+/* reveal .rightcolumn { */
+/*     border-style:solid; */
+/*     border-width:2px; */
+/*     width: 30%; */
+/*     text-align:left; */
+/*     top:40px; */
+/* } */
+.reveal .leftcolumn blockquote {
+  font-size: 0.8em;
+  background-color: #E7F0FB;
+  width: 85%; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
