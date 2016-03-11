@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/theme/white.css" id="theme">
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
-  <link rel="stylesheet" href="css/theme/white.css"
+  <link rel="stylesheet" href="css/theme/eawag.css"
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
@@ -28,15 +28,20 @@
 <body>
   <div class="reveal">
     <!-- <img src="assets/ealogo_black.svg" width="12%"/> -->
-    <img src="assets/eaw-rdm1_inv.svg" width="50%"/>
+    
     <div class="slides">
       <!-- here come the slides -->
-
-      <section>
-	<img src="assets/eawag_vorlage_blau_background_lower.png"/>
-	<h1 class="maintitle_l1"> The EAWAG Research Data Management Project</h1>
-	<h2 class="maintitle_l2"> &mdash; start of the pilot phase &mdash; </h2>
-	<h3 class="authordate"> Harald von Waldow / 2016-03-17</h3>
+      <img class="logo" src="assets/eaw-rdm1_inv.svg"/>
+      <section data-background="assets/eawag_vorlage_blau_background.png" data-state="title">
+	<div class="maintitle_l1">
+	  The EAWAG Research Data Management Project
+	</div>
+	<div class="maintitle_l2">
+	  &mdash; start of the pilot phase &mdash;
+	</div>
+	<div class="authordate">
+	  Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-17
+	</div>
       </section>
 
 <section>
@@ -225,6 +230,8 @@
         // specified using percentage units.
         width: 1024,
         height: 768,
+        //width: 1090,
+        //height:1200,
         // Factor of the display size that should remain empty around the content
         margin: 0.05,
 

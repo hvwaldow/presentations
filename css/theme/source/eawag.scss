@@ -1,0 +1,106 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+$eawblue1: #045A78;
+@mixin raw_img {
+    margin: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+html.title .slide-background {
+    @include raw_img;
+    /* background-size: 100% 100%; */
+    background-size: contain;
+}
+
+img.logo {
+    @include raw_img;
+    width: 35%;
+    position:fixed;
+    left:0px;
+}
+
+@mixin titletext {
+    color: #222;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-shadow: none;
+    word-wrap: break-word;
+    right: 0;
+    position: fixed;
+}
+    
+.reveal .maintitle_l1 {
+    @include titletext;
+    font-size: 1.6em;
+    float:right;
+    text-align: right;
+    width: 50%;
+    bottom: 0px;
+}    
+.reveal .maintitle_l2 {
+    @include titletext;
+    font-size: 1.0em;
+    bottom: -2.1em;
+}
+
+.reveal .authordate {
+    font-size: 0.6em;
+    position:fixed;
+    bottom:-17.5em;
+    left:-0.75em;
+    font-family: mono;
+    color: $eawblue1;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
