@@ -67,6 +67,9 @@ img.logo {
   font-family: mono;
   color: #045A78; }
 
+.reveal section .lonesectitle {
+  margin-top: 70px; }
+
 .reveal section img {
   margin: 0;
   background: none;
