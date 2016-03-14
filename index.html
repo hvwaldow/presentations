@@ -28,28 +28,33 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <img class="logo" src="/assets/eaw-rdm1_inv.svg"/>
+      <img class="logo" src="assets/eaw-rdm1_inv.svg"/>
       <section data-background="assets/eawag_vorlage_blau_background.png" data-state="title">
-	<div class="maintitle_l1">
-	  The EAWAG Research Data Platform (<span class="alert">ERDP</span>)
-	</div>
-	<div class="maintitle_l2">
-	  &mdash; start of the pilot phase &mdash;
-	</div>
-	<div class="authordate">
-	  Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-17
+	<div class="full">
+	  <div class="maintitle_l1">
+	    The EAWAG Research Data Platform
+	    (<span class="alert">ERDP</span>)
+	  </div>
+	  <div class="maintitle_l2">
+	    &mdash; start of the pilot phase &mdash;
+	  </div>
+	  <div class="authordate">
+	    Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-17
+	  </div>
 	</div>
       </section>
+      
       <section>
 	<section>
 	  <h1>What it is <i class="alert">not</i></h1>
 	</section>
 	<section>
 	  <div class="rightcolumn box">
-
+	    TODO: symbolic ER-diagram
 	  </div>
 	  <div class="leftcolumn">
-	    A homogenized, well-structured, relational database that you could query like:
+	    A homogenized, well-structured, relational database that
+	    you could query like:
 	    <blockquote>
 	      Give me all pH - values where we also have turbidity and
 	      discharge is &lt;&nbsp;20&nbsp;m<sup>3</sup>/s.
@@ -57,7 +62,7 @@
 	    <blockquote class="fragment fade-in">
 	      And plot them. In blue. With yellow dots. On a logarithmic scale.
 	    </blockquote>
-	    <ol class="alert">
+	    <ol>
 	      <li class="fragment">That would be impossible, EAWAG-wide.</li>
 	      <li class="fragment">That doesn't solve our problem</li>
 	    </ol> 
@@ -70,17 +75,23 @@
 	  <h1>What <i class="alert">is it</i> then?</h1>
 	</section>
 	<section>
+	  <div class="rightcolumn box">
+	    TODO: pic with a package.
+	  </div>
 	  <div class="leftcolumn">
-	    <p style="text-align:center;"><b>A collection of<br /> <i><font class="alert">"Data Packages"</font></i>.</b></p>
+	    <p style="text-align:center;"><b>A collection
+	    of<br /> <i><font class="alert">"Data
+	    Packages"</font></i>.</b></p>
 	    <p>
   	      The system doesn't have to look into the files.</p>
 	    <p class="fragment drawback">
 	      no selection/search/analysis based on dataset content.</p>
 	    <p class="fragment benefit">
-	      technically, everything can be dumped into a package, without any pre-processing.</p>
+	      technically, everything can be dumped into a package,
+	      without any pre-processing.</p>
 	    <p style="font-size:smaller" class="fragment">
-	      <img class="preimgfloat" src="/assets/Microsoft_Excel_2013_logo.svg">
-	      <img class="preimgfloat" src="/assets/Microsoft_Word_2013_logo.svg">
+	      <img class="preimgfloat" src="assets/Microsoft_Excel_2013_logo.svg">
+	      <img class="preimgfloat" src="assets/Microsoft_Word_2013_logo.svg">
 	      Some file-formats should be avoided, though!
 	    </p>
 	  </div>
@@ -116,6 +127,10 @@
 	  <h1>How is it <i class="alert">organized</i>?</h1>
 	</section>
 	<section>
+	  <div class="rightcolumn box">
+	    TODO: picture illustrating how Organizations with can be
+	    Groups or Departments, hirarchy.
+	  </div>
 	  <div class="leftcolumn">
 	    <div><b><span class="alert">"Organizations"</span><br />
 		=<br />
@@ -130,13 +145,17 @@
 		<li class="fragment" data-fragment-index="1">are,
 		  ideally, comparatively homogeneous with resepect to
 		  data-management needs.</li>
-		<li class="fragment">can, ideally, be handled by 1-2
+		<li class="fragment">can, ideally, be handled by 1&nbsp;-&nbsp;2
 		"Data Managers".</li>
 	      </ul>
 	    </p>
 	  </div>
 	</section>
 	<section>
+	  <div class="rightcolumn box">
+	    TODO: picture illustrating the interplay between ERDP,
+	    Data Managers, Researchers, and Project.
+	  </div>
 	  <div class="leftcolumn">
 	    <p><b class="alert">"Data Managers"</b>
 	      <ul>
@@ -147,9 +166,10 @@
 		<li class="fragment" data-fragment-index="2">number
 		preferably 1 - 3 per organization.</li>
 		<li class="fragment" data-fragment-index="3">ideally have</li>
-		<ul style="font-size:smaller;" class="fragment" data-fragment-index="3">
+		<ul style="font-size:smaller;" class="fragment"
+		    data-fragment-index="3">
 		  <li>some data-wrangling skills.</li>
-		  <li>a longer term perspective at Eawag.</li>
+		  <li>prolonged stay at Eawag.</li>
 		  <li>good overview of organizations'
 		  research-activities.</li>
 		</ul>
@@ -171,10 +191,21 @@
 	<section>
 	  <h1>What about <i class="alert">automating</i> things?</h1>
 	</section>
+	<section>
+	  TODO: present programmatic upload to CKAN ("batch upload")
+	</section>
       </section>
       <section>
 	<section>
-	  <h1>How does it fit into the <i class="alert">technical ecosystem</i>?</h1>
+	  <h1>How does it fit into the <i class="alert">technical
+	  ecosystem</i>?</h1>
+	</section>
+	<section>
+	  <div class="full box">
+	    TODO: Picture illustrating interplay with Lib4Ri-repo,
+	    EMP-EAW-storage, alternative storage backends, external
+	    repositories & archives.
+	  </div>
 	</section>
       </section>
       <section>
@@ -183,28 +214,28 @@
 	</section>
 	<section>
 	  <div class="full box">
-	    <img class="full" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Rectangle_.png" />
+	    TODO: picture CKAN technology stack
 	  </div>
 	</section>
 	<section>
 	  <!-- <div class="rightcolumn"> -->
 	  <!-- <span class="fragment fade-in"> -->
 	    <img class="rawimg fragment fade-out"
-		 data-fragment-index="1"src="/assets/Waterfall.png"
+		 data-fragment-index="1"src="assets/Waterfall.png"
 		 style="width:250px;float:right;margin-top:70px;"/>
 	    <!-- </span> -->
 	  <!-- </div> -->
 	  <!-- <div class="leftcolumn"> -->
-	  <p class="lonesectitle"><b>Why <span class="alert">CKAN<span>?</b></p>
+	  <p class="lonesectitle"><b>Why <span class="ckan alert">CKAN<span>?</b></p>
 	  <div style="text-align:left;">
 	    <b>Non-options:</b>
-	      <ul>
+	    <ul>
 		<li>Commission proprietary custom <br />development.</li>
 		<li class="fragment" data-fragment-index="1">In-house
 		custom development from scratch.</li>
 	      </ul><br />
 	      <b class="alert fragment" data-fragment-index="2">=&gt;
-	      Obviously bads ideas!</b>
+	      Obviously bad ideas!</b>
 	  </div>
 	  <div style="text-align:left;">
 	    <b class="fragment" data-fragment-index="3">Expect:</b>
@@ -224,95 +255,107 @@
 	      Customization of well-established open-source
 	      software!</b>
 	  </div>
-	  <!-- </div> -->
-
-	  <!-- <p>Other options: -->
-	  <!--   <table> -->
-	  <!--     <tr><th>one</th></tr> -->
-	  <!--     <tr><td>two</td></tr> -->
-	  <!--   </table> -->
-	  <!-- </p> -->
+	</section>
+	<section>
+	  <p class="lonesectitle"><b>Evaluation criteria</b></p>
+	  <ol style="font-size:smaller;">
+	    <li>mature software</li>
+	    <li>active developer community</li>
+	    <li>large user-base</li>
+	    <li>reasonably modern technology stack</li>
+	    <li class="alert">maximum overlap with Eawag requirements</li>
+	  </ol>
+	  <div class="fragment">
+	    <p style="font-size:smaller;">Taking into account criteria
+	      1. - 4. the following contenders are left:</p>
+	    <table style="font-size:smaller;">
+	      <colgroup>
+		<col width="200">
+		<col width="700">
+	      </colgroup>
+	      <tr><th>Name</th><th>Comment</th></tr>
+	      <tr><th class="islandora">Islandora</th><td rowspan="2"
+	      style="vertical-align:middle;">Lack of demonstrated
+	      ability to deal with datasets (as opposed to
+	      publications)</td></tr>
+	      <tr><th  class="ivenio">Ivenio</th><td></td></tr>
+	      <tr><th class="dspace">DSpace</th><td rowspan="2"
+	      style="vertical-align:middle">Lack of geospatial
+	      capabilities,<br/>smaller user-base</td></tr>
+	      <tr><th  class="dataverse">Dataverse</th><td></td></tr>
+	    </table>
+	  </div>
 	</section>
       </section>
-      
-		
-      
-      
-      
-    
-
-
-<!-- <section> -->
-<!--   <section> -->
-<!--     <h2> The broad concept</h2> -->
-<!--     <h3> EAWAG Research Data Management Platform</h3> -->
-<!--   </section> -->
-<!--   <section> -->
-<!--     <div style="text-align:left;float:left; width:50%;"> -->
-<!--       <b>Data is organized in <font color="#FBC197">packages</font>, containing:</b> -->
-<!--       <p> -->
-<!--     <ol> -->
-<!--       <li><font color="#FBC197">meta-data</font> (who, where, what, when, how, ...) -->
-<!--       <li>the data proper as <font color="#FBC197">files</font> -->
-<!--     </ol> -->
-<!--     <ul class="fragment"> -->
-<!--       <li>All types of files are possible in principle, -->
-<!-- 	e.g.,<br />PDF, csv, xlsx, ai, txt, WKTF, logger-output, video, sound, ... -->
-<!--       <li>The platform is ignorant about a file's content -->
-<!--     </ul> -->
-<!--     </div> -->
-<!--    <img src="" width="49%" height="630px" /> -->
-<!--   </section> -->
-<!--   <section> -->
-<!--     <div style="text-align:left;float:left; width:50%;"> -->
-<!--       <b>A package belongs to exactly one <font color="#FBC197">organization</font></b>. -->
-<!--     <p> -->
-<!--       <ul> -->
-<!-- 	<li>Organizations can be departments and groups (and service units). -->
-<!-- 	<li class="fragment" data-fragment-index="1">Organizations correspond mostly to the EAWAG organigram. -->
-<!-- 	<li class="fragment" data-fragment-index="2">Organizations serve to structure -->
-<!-- 	  <ul> -->
-<!-- 	    <li class="fragment" data-fragment-index="2">access issues (who can read and write a package) -->
-<!-- 	    <li class="fragment" data-fragment-index="3">the interaction between researchers and the project -->
-<!-- 	    via <font color="#FBC197">Data Managers</font> -->
-<!-- 	  </ul> -->
-<!--       </ul> -->
-<!--     </div> -->
-<!--     <img src="" width="49%" height="630px" /> -->
-<!--   </section> -->
-<!--   </section> -->
-<!-- <section data-markdown data-separator="---"  data-separator-vertical="--"> -->
-<!--   <script type="text/template"> -->
-<!--       ## Characteristics of the software -->
-<!--       -- -->
-<!--       ### Description of CKAN (3 slides) -->
-<!--       ### Comparision with other packages (2 slides) -->
-<!--       -- -->
-<!--       ### Life demo Web-UI -->
-<!--       + includes elaboration of visibility and permission rules: -->
-<!--       1. All data and meta-data is only accessible inside the EAWAG-network by EAWAG staff. -->
-<!--       2. All data is visible to everybody by default (visibility=private only temporarily) -->
-<!--       3. **Everybody is strictly required to get permission before any data is used in any way or made available outside EAWAG** -->
-      
-<!--       ** Rule \#3 is very important and has to be clearly communicated at all levels** -->
-
-<!--       -- -->
-      
-<!--       ### life-demo API (2 slides) -->
-
-<!--       --- -->
-<!--       ## Time-line and concluding remarks -->
-<!--       + Pilot-phase, meaning of, duration -->
-<!--       + Reminder for launch-event, plea to send a Data Manager candidate -->
-<!--       + Expected go-live -->
-<!--       + Long-term features and possibilities -->
-<!--       </script> -->
-<!--     </section> -->
-        <!-- here come the slides -->
-
-      </div>
+      <section>
+	<section>
+	  <h1>Time-line <span class="alert">&</span> Outlook</h1>
+	</section>
+	<section>
+	  <p class="lonesectitle"><b>March 21 &mdash; Dec
+	  31: <span class="alert">Pilot-Phase</span></b></p>
+	  <div style="text-align:left;"><ul>
+	      <li>Experimentation with various dataset types.</li>
+	      <li class="fragment" data-fragment-index="1">Further
+	      development of ERDP.
+	      <li class="fragment" data-fragment-index="1">Development
+	      of client-side helper tools.</li>
+	      <li class="fragment" data-fragment-index="1">Development
+	      of workflows.</li>
+	      <li class="fragment" data-fragment-index="2">No data-safety!</li>
+	      <li class="fragment" data-fragment-index="2">No
+	      interface-stability!</li>
+	      <li class="fragment" data-fragment-index="3">Motivate
+		potential data-managers to <span class="alert">show</span> up for
+	      launch-event:</li>
+	    </ul>
+	  </div>
+	   <b class="fragment" data-fragment-index="3">Monday 21.3 |
+	   FC-C20 | 14:00 - 16:00</b>
+	</section>
+	<section>
+	  <p class="lonesectitle"><b>New <span class="alert">features</span>
+	      until 2017</b></p>
+	  <div style="text-align:left;">
+	    <ul>
+	      <li>Significant development is planned to take place during
+		this year.</li>
+	      <li class="fragment" data-fragment-index="1">Some
+		features are already planned, but concrete
+		implementation and yet unknown needs will
+		emerge. E.g.:
+		<ul>
+		  <li class="fragment" data-fragment-index="1">version
+		  control for resources</li>
+		  <li class="fragment" data-fragment-index="1">strong backup</li>
+		  <li class="fragment"
+		    data-fragment-index="2">interfacing with public
+		    repositories (Zenodo, Dryad, ...)</li>
+		  <li class="fragment" data-fragment-index="2">public
+		  facing server / Open Data</li>
+		  <li class="fragment" data-fragment-index="3">ldap
+		  authentification</li>
+		  <li class="fragment"
+		  data-fragment-index="3">user-friendly spatial
+		  input</li>
+		  <li class="fragment" data-fragment-index="3">...</li>
+		</ul>
+	  </div>
+	  <b class="fragment" data-fragment-index="4">2016: The best
+	    year to <span class="alert">influence</span> future
+	    research data management practices at Eawag!</b>
+	</section>
+      </section>
+      <section>
+	<div class="full" style="background:white;">
+	  <h1><span class="alert">Q</span>uestions?</h1>
+	  <br />
+	  <img class="rawimg" width="50%" src="assets/cartoon.png" />
+	</div>
+      </section>
     </div>
-
+  </div>
+      
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->

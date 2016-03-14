@@ -28,7 +28,7 @@ img.logo {
 .alert {
   color: #F68B1F; }
 
-.reveal .maintitle_l1 {
+.reveal section .maintitle_l1 {
   color: #222;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
@@ -38,14 +38,14 @@ img.logo {
   text-shadow: none;
   word-wrap: break-word;
   right: 0;
-  position: fixed;
+  position: absolute;
   font-size: 1.6em;
   float: right;
   text-align: right;
   width: 50%;
-  bottom: 0px; }
+  bottom: 400px; }
 
-.reveal .maintitle_l2 {
+.reveal section .maintitle_l2 {
   color: #222;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
@@ -55,15 +55,15 @@ img.logo {
   text-shadow: none;
   word-wrap: break-word;
   right: 0;
-  position: fixed;
+  position: absolute;
   font-size: 1.0em;
-  bottom: -2.1em; }
+  bottom: 300px; }
 
-.reveal .authordate {
+.reveal section .authordate {
   font-size: 0.6em;
-  position: fixed;
-  bottom: -17.5em;
-  left: -0.75em;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   font-family: mono;
   color: #045A78; }
 
@@ -111,7 +111,7 @@ img.logo {
   background-size: 1.5ex 1.5ex;
   background-repeat: no-repeat;
   background-position: 0% 100%;
-  background-image: url("/assets/Plus_in_circle.svg"); }
+  background-image: url("../../assets/Plus_in_circle.svg"); }
 
 .reveal section p.drawback::before {
   content: "";
@@ -121,7 +121,57 @@ img.logo {
   background-size: 1.5ex 1.5ex;
   background-repeat: no-repeat;
   background-position: 0% 100%;
-  background-image: url("/assets/Minus_in_circle.svg"); }
+  background-image: url("../../assets/Minus_in_circle.svg"); }
+
+.reveal section .ckan::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("../../assets/ckan-logo0.svg"); }
+
+.reveal section .ivenio::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("../../assets/ivenio-logo.png"); }
+
+.reveal section .islandora::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("../../assets/islandora-logo.png"); }
+
+.reveal section .dspace::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("../../assets/dspace-logo.png"); }
+
+.reveal section .dataverse::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("../../assets/dataverse-logo.png"); }
 
 .reveal section .box {
   border-style: solid;
@@ -157,6 +207,9 @@ img.logo {
   height: 768px;
   position: absolute;
   top: -7px; }
+
+.reveal section ul ul {
+  font-size: smaller; }
 
 /* .reveal section .rightcolumn img { */
 /*     @include raw_img; */
