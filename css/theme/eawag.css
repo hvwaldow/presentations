@@ -7,6 +7,7 @@
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
+/* litte quadratic image in front of paragraph */
 html.title .slide-background {
   margin: 0;
   background: none;
@@ -23,6 +24,9 @@ img.logo {
   width: 35%;
   position: fixed;
   left: 0px; }
+
+.alert {
+  color: #F68B1F; }
 
 .reveal .maintitle_l1 {
   color: #222;
@@ -63,23 +67,93 @@ img.logo {
   font-family: mono;
   color: #045A78; }
 
-.alert {
-  color: #F68B1F; }
+.reveal section img {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+.reveal section .rawimg {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+.reveal section img.preimgfloat {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  float: left;
+  height: 2em;
+  margin-right: 1ex; }
+
+.reveal section img.full {
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%; }
+
+.reveal section p.benefit::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("/assets/Plus_in_circle.svg"); }
+
+.reveal section p.drawback::before {
+  content: "";
+  display: inline-block;
+  width: 1.6ex;
+  height: 1em;
+  background-size: 1.5ex 1.5ex;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-image: url("/assets/Minus_in_circle.svg"); }
+
+.reveal section .box {
+  border-style: solid;
+  border-width: 2px; }
+
+.reveal section .exampletext {
+  font-family: mono;
+  font-size: smaller;
+  text-align: left;
+  background-color: #E7F0FB; }
 
 .reveal section div.rightcolumn {
   width: 500px;
   height: 750px;
   margin-top: -10px;
-  float: right;
-  /* text-align:left; */ }
+  float: right; }
 
 .reveal section div.leftcolumn {
   width: 500px;
   height: 670px;
   margin-top: 70px; }
 
-.reveal section div.leftcolumn p {
+.reveal section blockquote {
+  font-size: 0.8em;
+  background-color: #E7F0FB;
+  width: 85%; }
+
+.reveal section p {
   text-align: left; }
+
+.reveal section div.full {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: -7px; }
 
 /* .reveal section .rightcolumn img { */
 /*     @include raw_img; */
@@ -95,39 +169,6 @@ img.logo {
 /*     text-align: left; */
 /*     background-color: blue; */
 /* } */
-.reveal section img {
-  margin: 0;
-  background: none;
-  border: none;
-  box-shadow: none; }
-
-.reveal section img.icon {
-  margin: 0;
-  background: none;
-  border: none;
-  box-shadow: none;
-  height: 30px; }
-
-.reveal section img.back {
-  margin: 0;
-  background: none;
-  border: none;
-  box-shadow: none;
-  height: 3em;
-  position: absolute;
-  left: 0p;
-  z-index: -1; }
-
-.reveal section .exampletext {
-  font-family: mono;
-  font-size: smaller;
-  text-align: left;
-  background-color: #E7F0FB; }
-
-.reveal section .box {
-  border-style: solid;
-  border-width: 3px; }
-
 /* reveal .rightcolumn { */
 /*     border-style:solid; */
 /*     border-width:2px; */
@@ -135,11 +176,6 @@ img.logo {
 /*     text-align:left; */
 /*     top:40px; */
 /* } */
-.reveal .leftcolumn blockquote {
-  font-size: 0.8em;
-  background-color: #E7F0FB;
-  width: 85%; }
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

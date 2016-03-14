@@ -28,10 +28,10 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <img class="logo" src="assets/eaw-rdm1_inv.svg"/>
+      <img class="logo" src="/assets/eaw-rdm1_inv.svg"/>
       <section data-background="assets/eawag_vorlage_blau_background.png" data-state="title">
 	<div class="maintitle_l1">
-	  The EAWAG Research Data Platform
+	  The EAWAG Research Data Platform (<span class="alert">ERDP</span>)
 	</div>
 	<div class="maintitle_l2">
 	  &mdash; start of the pilot phase &mdash;
@@ -48,7 +48,7 @@
 	  <div class="rightcolumn box">
 
 	  </div>
-	  <div class="leftcolumn box">
+	  <div class="leftcolumn">
 	    A homogenized, well-structured, relational database that you could query like:
 	    <blockquote>
 	      Give me all pH - values where we also have turbidity and
@@ -73,53 +73,118 @@
 	  <div class="leftcolumn">
 	    <p style="text-align:center;"><b>A collection of<br /> <i><font class="alert">"Data Packages"</font></i>.</b></p>
 	    <p>
-  	      The system doesn't have to look into the files.
-	    <p>
-  	      <img class="icon" src="assets/Minus_in_circle.svg">
-	      no selection/search/analysis based on dataset content.</img><br />
-	    <p>
-  	      <img class="icon" src="assets/Plus_in_circle.svg">
-	      technically, everything can be dumped into a package, without any pre-processing.<br />
-	      <div style="font-size:smaller">
-		<img class="back" src="assets/Microsoft_Excel_2013_logo_blass.svg">
-		<img class="back" style="left:4em;" src="assets/Microsoft_Word_2013_logo_blass.svg">
-		Some file-types are not so great for archival and should be avoided!
-		
-	      </div>
+  	      The system doesn't have to look into the files.</p>
+	    <p class="fragment drawback">
+	      no selection/search/analysis based on dataset content.</p>
+	    <p class="fragment benefit">
+	      technically, everything can be dumped into a package, without any pre-processing.</p>
+	    <p style="font-size:smaller" class="fragment">
+	      <img class="preimgfloat" src="/assets/Microsoft_Excel_2013_logo.svg">
+	      <img class="preimgfloat" src="/assets/Microsoft_Word_2013_logo.svg">
+	      Some file-formats should be avoided, though!
+	    </p>
 	  </div>
 	</section>
 	<section>
-	  <div class="rightcolumn box">
+	  <div class="rightcolumn">
 	    <div class="exampletext">
 	      authors: ...<br />
 	      date of submission: ...<br />
 	      temporal coverage: ...<br />
 	      spatial coverage: ...<br />
 	      status: ...<br />
-
-	    <!-- <p class="exampletext" style=""> -->
-
 	    </div>
 	    <p class="exampletext fragment" data-fragment-index="1">
 	      Variables: ...<br />  Systems: ... <br/>
 	    </p>
-	    <img class="fragment" data-fragment-index="2" style="height:400px"  src="assets/repo-standard-combo.png" />
+	    <img class="fragment rawimg" data-fragment-index="2" style="height:400px"  src="assets/repo-standard-combo.png" />
 	  </div>
-	  <div class="leftcolumn box">
+	  <div class="leftcolumn">
 	    <p style="text-align:center;"><b>package = files + <span class="alert">meta-data</span></b></p>
 	    <p style="text-align:center;color:gray;"><b>"resources" = files</b></p>
 	    <ul>
 	      <li class="fragment" data-fragment-index="1">search for packages is based on meta-data.</li>
-	      <li class="fragment" data-fragment-index="2">interaction with other repositories relies on meta-data.</li>
+	      <li class="fragment" data-fragment-index="2">interaction with other repositories and services relies on meta-data.</li>
 	      <li class="fragment" data-fragment-index="3">other "meta-data", e.g., units of variables, should
 	    	go into a resource (= file).</li>
 	    </ul>
 	  </div>
-
 	</section>
-
-	
       </section>
+      <section>
+	<section>
+	  <h1>How is it <i class="alert">organized</i>?</h1>
+	</section>
+	<section>
+	  <div class="leftcolumn">
+	    <div><b><span class="alert">"Organizations"</span><br />
+		=<br />
+		Departments<br />
+		+<br />
+		Research Groups</b>
+	    </div>
+	    <p>
+	      <br />
+	      <span class="fragment" data-fragment-index="1">Organizations</span>
+	      <ul>
+		<li class="fragment" data-fragment-index="1">are,
+		  ideally, comparatively homogeneous with resepect to
+		  data-management needs.</li>
+		<li class="fragment">can, ideally, be handled by 1-2 "Data Managers".</li>
+	      </ul>
+	    </p>
+	  </div>
+	</section>
+	<section>
+	  <div class="leftcolumn">
+	    <p><b class="alert">"Data Managers"</b>
+	      <ul>
+		<li>are the link between Researchers, the Platform, and the Project.</li>
+		<li class="fragment" data-fragment-index="1">are ERDP - administrators for their organization.</li>
+		<li class="fragment" data-fragment-index="2">number referably 1 - 3 per organization.</li>
+		<li class="fragment" data-fragment-index="3">ideally have</li>
+		<ul style="font-size:smaller;" class="fragment" data-fragment-index="3">
+		  <li>some data-wrangling skills.</li>
+		  <li>a longer term perspective at Eawag.</li>
+		  <li>good overview of research-activities.</li>
+		</ul>
+	      </ul>
+	    </p>
+	  </div>
+	</section>
+      </section>
+      <section>
+	<h1>How does it <i class="alert">look</i> like?</h1>
+	<br />
+	<div>
+	<a href="http://eaw-ckan-dev1.eawag.wroot.emp-eaw.ch" target="_blank">
+	  <span style="font-family:mono;">http://eaw-ckan-dev1.eawag.ch</span>
+	</a>
+	</div>
+      </section>
+      <section>
+	<section>
+	  <h1>What about <i class="alert">automating</i> things?</h1>
+	</section>
+      </section>
+      <section>
+	<section>
+	  <h1>How does it fit into the <i class="alert">technical ecosystem</i>?</h1>
+	</section>
+      </section>
+      <section>
+	<section>
+	  <h1>What<i class="alert">software</i> is that based on?</h1>
+	</section>
+	<section>
+	  <div class="full box">
+	    <img class="full" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Rectangle_.png" />
+	  </div>
+      </section>
+      
+      
+      
+    
 
 
 <!-- <section> -->
