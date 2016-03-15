@@ -33,7 +33,7 @@
 	<div class="full">
 	  <div class="maintitle_l1">
 	    The EAWAG Research Data Platform
-	    (<span class="alert">ERDP</span>)
+	    (<span class="alert">RDP</span>)
 	  </div>
 	  <div class="maintitle_l2">
 	    &mdash; start of the pilot phase &mdash;
@@ -53,8 +53,9 @@
 	    <img class="rawimg" src="assets/ER.jpg" />
 	  </div>
 	  <div class="leftcolumn">
-	    <p>A homogenized, well-structured, relational database that
-	      you could query like:</p>
+	    <p>A normalized,
+	      well-structured, <span class="alert">relational
+	      database</span> that you could query like:</p>
 	    <blockquote>
 	      Give me all pH - values where we also have turbidity and
 	      discharge is &lt;&nbsp;20&nbsp;m<sup>3</sup>/s.
@@ -64,7 +65,7 @@
 	    </blockquote>
 	    <ol>
 	      <li class="fragment">That would be impossible, EAWAG-wide.</li>
-	      <li class="fragment">That doesn't solve our problem</li>
+	      <li class="fragment">That doesn't solve the problem (archival).</li>
 	    </ol> 
 	  </div>
 	</section>
@@ -83,9 +84,9 @@
 	    of<br /> <i><font class="alert">"Data
 	    Packages"</font></i>.</b></p>
 	    <p>
-  	      The system doesn't have to look into the files.</p>
+  	      The system doesn't look into the files.</p>
 	    <p class="fragment drawback">
-	      no selection/search/analysis based on dataset content.</p>
+	      no selection/search/analysis based directly on file content.</p>
 	    <p class="fragment benefit">
 	      technically, everything can be dumped into a package,
 	      without any pre-processing.</p>
@@ -141,41 +142,35 @@
 	    <div><b><span class="alert">"Organizations"</span><br />
 		=<br />
 		Departments<br />
-		+<br />
+		or<br />
 		Research Groups</b>
 	    </div>
-	    <p>
 	      <br />
-	      <span class="fragment" data-fragment-index="1">Organizations</span>
-	      <ul>
-		<li class="fragment" data-fragment-index="1">are,
-		  ideally, comparatively homogeneous with resepect to
-		  data-management needs.</li>
-		<li class="fragment">can, ideally, be handled by 1&nbsp;-&nbsp;2
-		"Data Managers".</li>
-	      </ul>
-	    </p>
+	    <p class="fragment" data-fragment-index="1">
+	      <b>Organizations</b> are, ideally, comparatively
+		 homogeneous with respect to data-management
+		 needs.</p>
 	  </div>
 	</section>
 	<section>
 	  <div class="rightcolumn" >
 	  <img class="rawimg"
 	  style="display:inline-block;height:100%;vertical-align:middle;"
-	  src="/assets/collaboration.svg" />
+	  src="assets/collaboration.svg" />
 	  </div>
 	  <div class="leftcolumn">
 	    <p><b class="alert">"Data Managers"</b>
 	      <ul>
 		<li>are the link between Researchers, the Platform,
 		and the Project.</li>
-		<li class="fragment" data-fragment-index="1">are ERDP
+		<li class="fragment" data-fragment-index="1">are RDP
 		- administrators for their organization.</li>
 		<li class="fragment" data-fragment-index="2">number
 		preferably 1 - 3 per organization.</li>
 		<li class="fragment" data-fragment-index="3">ideally have</li>
 		<ul style="font-size:smaller;" class="fragment"
 		    data-fragment-index="3">
-		  <li>some data-wrangling skills.</li>
+		  <li>some data-handling skills.</li>
 		  <li>prolonged stay at Eawag.</li>
 		  <li>good overview of organizations'
 		  research-activities.</li>
@@ -208,10 +203,8 @@
 	  ecosystem</i>?</h1>
 	</section>
 	<section>
-	  <div class="full box">
-	    TODO: Picture illustrating interplay with Lib4Ri-repo,
-	    EMP-EAW-storage, alternative storage backends, external
-	    repositories & archives.
+	  <div class="full"> 
+	    <img class="rawimg" src="assets/ecosystem.png" />
 	  </div>
 	</section>
       </section>
@@ -244,19 +237,15 @@
 	      <b class="alert fragment" data-fragment-index="2">=&gt;
 	      Obviously bad ideas!</b>
 	  </div>
+	  <br />
 	  <div style="text-align:left;">
-	    <b class="fragment" data-fragment-index="3">Expect:</b>
+	    <b class="fragment" data-fragment-index="3">Expect:</b><br />
 	      <ul>
 		<li class="fragment" data-fragment-index="3">Changing
 		requirements.</li>
-		<li class="fragment" data-fragment-index="4">Need for
-		in-house capacity for software development.</li>
 		<li class="fragment" data-fragment-index="5">Need for
 		  continuous adaption & refinement ...<br />
-		  ... inseparable from tight user-involvement.
-		<li class="fragment"
-		data-fragment-index="6">Complexity of the system that
-		maxes out available resources.</li>
+		  ... inseparable from tight user-involvement.</li>
 	      </ul><br />
 	      <b class="alert fragment" data-fragment-index="7">=&gt;
 	      Customization of well-established open-source
@@ -265,16 +254,16 @@
 	</section>
 	<section>
 	  <p class="lonesectitle"><b>Evaluation criteria</b></p>
-	  <ol style="font-size:smaller;">
+	  <ol style="font-size:smaller;" class="twocolslist">
 	    <li>mature software</li>
 	    <li>active developer community</li>
 	    <li>large user-base</li>
-	    <li>reasonably modern technology stack</li>
-	    <li class="alert">maximum overlap with Eawag requirements</li>
+	    <li>reasonably modern technology</li>
+	    <li class="alert">maximum overlap with<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eawag requirements</li>
 	  </ol>
 	  <div class="fragment">
 	    <p style="font-size:smaller;">Taking into account criteria
-	      1. - 4. the following contenders are left:</p>
+	      1 &ndash; 4, the following contenders are left:</p>
 	    <table style="font-size:smaller;">
 	      <colgroup>
 		<col width="200">
@@ -283,14 +272,19 @@
 	      <tr><th>Name</th><th>Comment</th></tr>
 	      <tr><th class="islandora">Islandora</th><td rowspan="2"
 	      style="vertical-align:middle;">Lack of demonstrated
-	      ability to deal with datasets (as opposed to
+	      ability to flexibly deal with datasets (as opposed to
 	      publications)</td></tr>
-	      <tr><th  class="ivenio">Ivenio</th><td></td></tr>
+	      <tr><th  class="ivenio">Invenio</th><td></td></tr>
 	      <tr><th class="dspace">DSpace</th><td rowspan="2"
 	      style="vertical-align:middle">Lack of geospatial
-	      capabilities,<br/>smaller user-base</td></tr>
+	      capabilities,<br/>comparatively smaller user-base</td></tr>
 	      <tr><th  class="dataverse">Dataverse</th><td></td></tr>
+	      <tr><th class="ckan">CKAN</th><td style="border-bottom:
+		  1px solid;">Emerging standard for Open Data, very
+		  large and growing user-base, high-profile
+		  users</td></tr>
 	    </table>
+	    <hrule>
 	  </div>
 	</section>
       </section>
@@ -302,18 +296,23 @@
 	  <p class="lonesectitle"><b>March 21 &mdash; Dec
 	  31: <span class="alert">Pilot-Phase</span></b></p>
 	  <div style="text-align:left;"><ul>
-	      <li>Experimentation with various dataset types.</li>
-	      <li class="fragment" data-fragment-index="1">Further
-	      development of ERDP.
-	      <li class="fragment" data-fragment-index="1">Development
-	      of client-side helper tools.</li>
-	      <li class="fragment" data-fragment-index="1">Development
-	      of workflows.</li>
+	      <li>Experimentation with various types of data.</li>
+	      <li>Debugging.</li>
+	      <li class="fragment"
+	      data-fragment-index="1"><span class="alert">User feedback </span>
+	      for further iterative RDP development.
+	      <li class="fragment"
+		  data-fragment-index="1"><span class="alert">User-specific
+		  development work</span>, e.g., client-side helper
+		  tools.</li>
+	      <li class="fragment"
+		  data-fragment-index="1"><span class="alert">Collaborative</span>
+		  development of workflows.</li>
 	      <li class="fragment" data-fragment-index="2">No data-safety!</li>
 	      <li class="fragment" data-fragment-index="2">No
 	      interface-stability!</li>
 	      <li class="fragment" data-fragment-index="3">Motivate
-		potential data-managers to <span class="alert">show</span> up for
+		potential data-managers to <span class="alert">show up</span> for
 	      launch-event:</li>
 	    </ul>
 	  </div>
@@ -353,13 +352,13 @@
 	    research data management practices at Eawag!</b>
 	</section>
       </section>
-      <section>
-	<div class="full" style="background:white;">
-	  <h1><span class="alert">Q</span>uestions?</h1>
-	  <br />
-	  <img class="rawimg" width="50%" src="assets/cartoon.png" />
-	</div>
-      </section>
+      <!-- <section> -->
+      <!-- 	<div class="full" style="background:white;"> -->
+      <!-- 	  <h1><span class="alert">Q</span>uestions?</h1> -->
+      <!-- 	  <br /> -->
+      <!-- 	  <img class="rawimg" width="50%" src="assets/cartoon.png" /> -->
+      <!-- 	</div> -->
+      <!-- </section> -->
     </div>
   </div>
       

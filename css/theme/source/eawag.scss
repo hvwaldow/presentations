@@ -82,6 +82,17 @@ img.logo {
   color: $eawred1;
 }
 
+ol.twocolslist {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside;
+  li {
+    float: left;
+    width: 100%;
+  }
+}
+
 @mixin titletext {
   color: #222;
   font-family: "Source Sans Pro", Helvetica, sans-serif;

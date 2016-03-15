@@ -28,6 +28,15 @@ img.logo {
 .alert {
   color: #F68B1F; }
 
+ol.twocolslist {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside; }
+  ol.twocolslist li {
+    float: left;
+    width: 100%; }
+
 .reveal section .maintitle_l1 {
   color: #222;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
