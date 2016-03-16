@@ -72,10 +72,6 @@ html.title .slide-background {
   background-size: contain;
 }
 
-html.whitebg {
-  background-color: white;
-}
-
 img.logo {
   @include raw_img;
   width: 35%;
