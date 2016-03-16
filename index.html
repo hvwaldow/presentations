@@ -194,10 +194,53 @@
 	  <h1>What about <i class="alert">automating</i> things?</h1>
 	</section>
 	<section>
-	  TODO: present programmatic upload to CKAN ("batch upload")
-	</section>
-      </section>
-      <section>
+	  <p>
+	    CKAN has a <span class="alert">remote API</span> that
+	    exposes all of CKAN’s core features.</span></p>
+          <p>Access via http:<br />
+	    <a style="font-size:smaller;" href="http://eaw-ckan-dev1/api/3/action/package_search?fq=tags:fish" target="_blank">
+	      http://eaw-ckan-dev1/api/3/action/package_search?fq=tags:fish</a></p>
+          <p class="fragment" data-fragment-index="1">Used to
+          programmatically read, create and modify packages.</p>
+	  <div style="text-align:left;" class="fragment" data-fragment-index="1">
+	    <ul>
+	      <li>recuring tasks, e.g. regular updates</li>
+	      <li>batch upload of legacy data</li>
+	      <li>automatic validation</li>
+	      <li>interaction with other repositories</li>
+	    </ul>
+	  </div>
+       </section>
+       <section>
+         <pre style="width:100%;top:-50px;" class="bash"><code># sh
+
+curl 'http://eaw-ckan-dev1.eawag.wroot.emp-eaw.ch/api/3/action/organization_list'
+{"help": ... "result": ["aquatic-ecology", "aquatic-entomology",
+ "environmental-chemistry", "environmental-microbiology",
+"fish-ecology-and-evolution", "gis-services", "it-services", ... ] }</code></pre>
+	 
+         <pre style="width:100%;margin-top:-60px;"><code># Python
+		
+from ckanapi import *
+		
+ckanremote = RemoteCKAN("http://eaw-ckan-dev1.eawag.wroot.emp-eaw.ch",
+             apikey=os.environ["CKAN_DEV1_APIKEY_HVW_ADM"])
+pkg = ckanremote.action.package_show(id="reform")
+print(pkg)</code></pre>
+	 
+	 <pre style="width:100%;margin-top:-5px;"><code>## R
+
+> library('ckanr')
+> ckanr_setup(url="http://eaw-ckan-dev1",key=Sys.getenv("CKAN_DEV1_APIKEY_HVW_ADM"))
+> package_list(as="table")
+ [1] "data-from-population..."
+ [2] "record"
+  ...
+         </code></pre>
+         <p><span class="alert">Support for writing such client code</span> expected as major task during pilot-phase.</p> 
+         </section>
+         </section>
+       <section>
 	<section>
 	  <h1>How does it fit into the <i class="alert">technical
 	  ecosystem</i>?</h1>

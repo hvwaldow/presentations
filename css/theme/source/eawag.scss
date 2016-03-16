@@ -46,6 +46,7 @@ $eawblue1: #045A78;
 $eawred1: #F68B1F;
 $lightblue: #E7F0FB;
 
+
 @mixin raw_img {
   margin: 0;
   background: none;
@@ -69,6 +70,10 @@ html.title .slide-background {
   @include raw_img;
   /* background-size: 100% 100%; */
   background-size: contain;
+}
+
+html.whitebg {
+  background-color: white;
 }
 
 img.logo {
