@@ -39,7 +39,7 @@
 	    &mdash; start of the pilot phase &mdash;
 	  </div>
 	  <div class="authordate">
-	    Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-17
+	    Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt; &mdash; 2016-03-21
 	  </div>
 	</div>
       </section>
@@ -60,12 +60,12 @@
 	      Give me all pH - values where we also have turbidity measurements and
 	      discharge is &lt;&nbsp;20&nbsp;m<sup>3</sup>/s.
 	    </blockquote>
-	    <blockquote class="fragment fade-in">
+	    <blockquote>
 	      And plot them. In blue. With yellow dots. On a logarithmic scale.
 	    </blockquote>
-	    <ol>
-	      <li class="fragment">That would be impossible, EAWAG-wide.</li>
-	      <li class="fragment">That doesn't solve the problem (archival).</li>
+	    <ol class="fragment">
+	      <li>That would be impossible, EAWAG-wide.</li>
+	      <li>That doesn't solve the problem (archival).</li>
 	    </ol> 
 	  </div>
 	</section>
@@ -73,7 +73,124 @@
  
       <section>
 	<section>
-	  <h1>What <i class="alert">is it</i> then?</h1>
+	  <h1>What is it <i class="alert">for</i>?</h1>
+	</section>
+	<section>
+	  <p>A <span class="alert">motivating example</span>:</p>
+	  <div><pre class="html"><code style="max-height: 500px;" data-noescape data-trim>
+		On <mark>Tue, Aug 25, 2015</mark> at 6:27 PM, Matthew MacLeod &lt;Matthew.MacLeod@aces.su.se&gt;
+wrote:
+
+Hey HvW…
+
+Recep and I have been working a bit on some ideas related to your
+Remoteness Index.
+
+<mark>It would help us a lot to have the raw data</mark> (as NetCDF files, for
+example) that underlie your Remoteness Index maps that you
+published in ES&T.  We are most interested in the map for the
+night-light emission scenario, but would be happy to have the raw
+data for the CROP scenario also.
+
+<mark>Do you still have those files backed up somewhere??</mark>
+
+Thanks!  -matt
+	    </code></pre>
+	  </div>
+	</section>
+	
+	<section>
+	  <div style="float:right;">
+	    <img class="rawimg" src="assets/cd1.png" />
+	  </div>
+	    <div style="width:50%">
+	      <p class="lonesectitle" ><span class="alert">Data Mangement Rule</span> at the time:</p>
+	      <p ><ol class="exampletext"><li>Put your stuff on a CD.</li><li>Put CD into drawer in secretary's office.</li></ol></p>
+	    </div>
+	    <div>
+	    <ul class="fragment">
+	      <li>CD not extremely good organized and documented.</li>
+	      <li>Who in old workgroup would be willing to search and interpret that CD? (In case it it still working)</li>
+	      <li>Workgroup will cease to exist soon.</li>
+	    </ul>
+	  </div>
+	</section>
+
+	<section>
+	  <div>
+	    <p>My private <span class="alert">data management strategy</span> at the time:<p>
+
+	    <pre><code class="bash">rsync -av /home/hvwaldow hvw@climstor.unibe.ch:/.../private/archive/phd</code></pre>
+	    <br />
+	    <img style="float:right;" class="rawimg" src="assets/copy.png" height="200px"/>
+	    <img class="fragment" width="680px;" style="position:absolute;top:150px;left:0px;" src="assets/sprechblase.png">
+	</section>
+	<section>
+	  <p class="lonesectitle"><span class="alert">recovery</span> ...</p>
+	  <img class="rawimg" src="assets/example_tree.png" width="80%"/>
+	</section>
+	<section>
+	  <p class="lonesectitle"><span class="alert">recovery</span> ...</p>
+	  <div style="text-align:left;">
+	    <ul>
+	      <li>find file (candidates).</li>
+	      <li>don't find plotting routine.</li>
+	      <li>re-write plotting routine.</li>
+	      <li>compare with published figure.</li>
+	      <li>document data</li>
+	    </ul>
+	  </div>
+	  <pre class="html" style="width:100%"><code data-noescape>On Wed, <mark>Sep 16, 2015</mark> at 2:30 AM, Harald von Waldow &lt;harald@vonwaldow.ch&gt; wrote:
+Hi Matt & Recep,
+
+sorry for the delay again. You know how it is ..
+
+Please find attached an archive with 4 files:
+.....
+....</code></pre>
+	</section>
+	<section>
+	  <div class="rightcolumn">
+	    <p>Feb 1, 2016:</p>
+	    <img class="rawimg" width="100%" src="assets/matts_tweet.png" />
+	  </div>
+	  <div class="leftcolumn">
+	    <p><span class="alert">H</span>appy <span class="alert">E</span>nd</p>
+
+	    <div style="margin-top:200px"><mark>But that should have been a much faster procedure ...</mark></div>
+	  </div>
+	</section>
+	<section>
+	  <div style="text-align: left;">
+	  <p class="lonesectitle">
+	    <span class="alert">What data</span> to upload?</p>
+	  
+	  <p>
+	    E.g. <br />
+	    <ol>
+	      <li>data that supplements a publication</li>
+	      <li>raw - data</li>
+	      <li>the workgroup "stock-data"</li>
+	      <li> ... </li>
+	      <li> ... </li>
+	    </ol>
+	    </p><p class="fragment" data-fragment-index="1">
+	      <b>Rule of thumb:</b> Everything that
+	      is <mark>consistent</mark> and <mark>complete</mark>
+	      enough and <mark>worth checking and documenting</mark>
+	      to an extent that it stands for itself and could be used
+	      by others without additional information.
+	  </p>
+
+	  <p class="fragment" data-fragment-index="1">
+	    <b>Details are going to be figured out individually.</b>
+	  </p>
+	  </div>
+	</section>
+      </section>
+      <section>
+      	<section>
+	  <h1>What <i class="alert">is it</i> then, exactly?</h1>
 	</section>
 	<section>
 	  <div class="rightcolumn">
@@ -258,76 +375,76 @@ print(pkg)</code></pre>
 	    <img class="rawimg" src="assets/techstack.png" />
 	  </div>
 	</section>
-	<section>
-	  <!-- <div class="rightcolumn"> -->
-	  <!-- <span class="fragment fade-in"> -->
-	    <img class="rawimg fragment fade-out"
-		 data-fragment-index="1"src="assets/Waterfall.png"
-		 style="width:250px;float:right;margin-top:70px;"/>
-	    <!-- </span> -->
-	  <!-- </div> -->
-	  <!-- <div class="leftcolumn"> -->
-	  <p class="lonesectitle"><b>Why <span class="ckan alert">CKAN<span>?</b></p>
-	  <div style="text-align:left;">
-	    <b>Non-options:</b>
-	    <ul>
-		<li>Commission proprietary custom <br />development.</li>
-		<li class="fragment" data-fragment-index="1">In-house
-		custom development from scratch.</li>
-	      </ul><br />
-	      <b class="alert fragment" data-fragment-index="2">=&gt;
-	      Obviously bad ideas!</b>
-	  </div>
-	  <br />
-	  <div style="text-align:left;">
-	    <b class="fragment" data-fragment-index="3">Expect:</b><br />
-	      <ul>
-		<li class="fragment" data-fragment-index="3">Changing
-		requirements.</li>
-		<li class="fragment" data-fragment-index="5">Need for
-		  continuous adaption & refinement ...<br />
-		  ... inseparable from tight user-involvement.</li>
-	      </ul><br />
-	      <b class="alert fragment" data-fragment-index="7">=&gt;
-	      Customization of well-established open-source
-	      software!</b>
-	  </div>
-	</section>
-	<section>
-	  <p class="lonesectitle"><b>Evaluation criteria</b></p>
-	  <ol style="font-size:smaller;" class="twocolslist">
-	    <li>mature software</li>
-	    <li>active developer community</li>
-	    <li>large user-base</li>
-	    <li>reasonably modern technology</li>
-	    <li class="alert">maximum overlap with<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eawag requirements</li>
-	  </ol>
-	  <div class="fragment">
-	    <p style="font-size:smaller;">Taking into account criteria
-	      1 &ndash; 4, the following contenders are left:</p>
-	    <table style="font-size:smaller;">
-	      <colgroup>
-		<col width="200">
-		<col width="700">
-	      </colgroup>
-	      <tr><th>Name</th><th>Comment</th></tr>
-	      <tr><th class="islandora">Islandora</th><td rowspan="2"
-	      style="vertical-align:middle;">Lack of demonstrated
-	      ability to flexibly deal with datasets (as opposed to
-	      publications)</td></tr>
-	      <tr><th  class="ivenio">Invenio</th><td></td></tr>
-	      <tr><th class="dspace">DSpace</th><td rowspan="2"
-	      style="vertical-align:middle">Lack of geospatial
-	      capabilities,<br/>comparatively smaller user-base</td></tr>
-	      <tr><th  class="dataverse">Dataverse</th><td></td></tr>
-	      <tr><th class="ckan">CKAN</th><td style="border-bottom:
-		  1px solid;">Emerging standard for Open Data, very
-		  large and growing user-base, high-profile
-		  users</td></tr>
-	    </table>
-	    <hrule>
-	  </div>
-	</section>
+	<!-- <section> -->
+	<!--   <\!-- <div class="rightcolumn"> -\-> -->
+	<!--   <\!-- <span class="fragment fade-in"> -\-> -->
+	<!--     <img class="rawimg fragment fade-out" -->
+	<!-- 	 data-fragment-index="1"src="assets/Waterfall.png" -->
+	<!-- 	 style="width:250px;float:right;margin-top:70px;"/> -->
+	<!--     <\!-- </span> -\-> -->
+	<!--   <\!-- </div> -\-> -->
+	<!--   <\!-- <div class="leftcolumn"> -\-> -->
+	<!--   <p class="lonesectitle"><b>Why <span class="ckan alert">CKAN<span>?</b></p> -->
+	<!--   <div style="text-align:left;"> -->
+	<!--     <b>Non-options:</b> -->
+	<!--     <ul> -->
+	<!-- 	<li>Commission proprietary custom <br />development.</li> -->
+	<!-- 	<li class="fragment" data-fragment-index="1">In-house -->
+	<!-- 	custom development from scratch.</li> -->
+	<!--       </ul><br /> -->
+	<!--       <b class="alert fragment" data-fragment-index="2">=&gt; -->
+	<!--       Obviously bad ideas!</b> -->
+	<!--   </div> -->
+	<!--   <br /> -->
+	<!--   <div style="text-align:left;"> -->
+	<!--     <b class="fragment" data-fragment-index="3">Expect:</b><br /> -->
+	<!--       <ul> -->
+	<!-- 	<li class="fragment" data-fragment-index="3">Changing -->
+	<!-- 	requirements.</li> -->
+	<!-- 	<li class="fragment" data-fragment-index="5">Need for -->
+	<!-- 	  continuous adaption & refinement ...<br /> -->
+	<!-- 	  ... inseparable from tight user-involvement.</li> -->
+	<!--       </ul><br /> -->
+	<!--       <b class="alert fragment" data-fragment-index="7">=&gt; -->
+	<!--       Customization of well-established open-source -->
+	<!--       software!</b> -->
+	<!--   </div> -->
+	<!-- </section> -->
+	<!-- <section> -->
+	<!--   <p class="lonesectitle"><b>Evaluation criteria</b></p> -->
+	<!--   <ol style="font-size:smaller;" class="twocolslist"> -->
+	<!--     <li>mature software</li> -->
+	<!--     <li>active developer community</li> -->
+	<!--     <li>large user-base</li> -->
+	<!--     <li>reasonably modern technology</li> -->
+	<!--     <li class="alert">maximum overlap with<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eawag requirements</li> -->
+	<!--   </ol> -->
+	<!--   <div class="fragment"> -->
+	<!--     <p style="font-size:smaller;">Taking into account criteria -->
+	<!--       1 &ndash; 4, the following contenders are left:</p> -->
+	<!--     <table style="font-size:smaller;"> -->
+	<!--       <colgroup> -->
+	<!-- 	<col width="200"> -->
+	<!-- 	<col width="700"> -->
+	<!--       </colgroup> -->
+	<!--       <tr><th>Name</th><th>Comment</th></tr> -->
+	<!--       <tr><th class="islandora">Islandora</th><td rowspan="2" -->
+	<!--       style="vertical-align:middle;">Lack of demonstrated -->
+	<!--       ability to flexibly deal with datasets (as opposed to -->
+	<!--       publications)</td></tr> -->
+	<!--       <tr><th  class="ivenio">Invenio</th><td></td></tr> -->
+	<!--       <tr><th class="dspace">DSpace</th><td rowspan="2" -->
+	<!--       style="vertical-align:middle">Lack of geospatial -->
+	<!--       capabilities,<br/>comparatively smaller user-base</td></tr> -->
+	<!--       <tr><th  class="dataverse">Dataverse</th><td></td></tr> -->
+	<!--       <tr><th class="ckan">CKAN</th><td style="border-bottom: -->
+	<!-- 	  1px solid;">Emerging standard for Open Data, very -->
+	<!-- 	  large and growing user-base, high-profile -->
+	<!-- 	  users</td></tr> -->
+	<!--     </table> -->
+	<!--     <hrule> -->
+	<!--   </div> -->
+	<!-- </section> -->
       </section>
       <section>
 	<section>
@@ -357,8 +474,8 @@ print(pkg)</code></pre>
 	      launch-event:</li>
 	    </ul>
 	  </div>
-	   <b class="fragment" data-fragment-index="3">Monday 21.3 |
-	   FC-C20 | 14:00 - 16:00</b>
+	   <!-- <b class="fragment" data-fragment-index="3">Monday 21.3 | -->
+	   <!-- FC-C20 | 14:00 - 16:00</b> -->
 	</section>
 	<section>
 	  <p class="lonesectitle"><b>New <span class="alert">features</span>
@@ -393,13 +510,13 @@ print(pkg)</code></pre>
 	    research data management practices at Eawag!</b>
 	</section>
       </section>
-      <!-- <section> -->
-      <!-- 	<div class="full" style="background:white;"> -->
-      <!-- 	  <h1><span class="alert">Q</span>uestions?</h1> -->
-      <!-- 	  <br /> -->
-      <!-- 	  <img class="rawimg" width="50%" src="assets/cartoon.png" /> -->
-      <!-- 	</div> -->
-      <!-- </section> -->
+      <section>
+      	<div class="full" style="background:white;">
+      	  <h1><span class="alert">Q</span>uestions?</h1>
+      	  <br />
+      	  <img class="rawimg" width="50%" src="assets/cartoon.png" />
+      	</div>
+      </section>
     </div>
   </div>
       
